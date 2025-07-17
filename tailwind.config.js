@@ -8,7 +8,16 @@ module.exports = {
     // "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orangePrimary: "#FF6700",
+        bluePrimary: "#00BFFF",
+        greenPrimary: "#32CD32",
+        blackPrimary: "#101010",
+        violetprimary: "#6461FC",
+        whiteprimary: "#FFFFFF",
+      },
+    },
   },
   plugins: [],
 };
