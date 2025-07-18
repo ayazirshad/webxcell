@@ -1,0 +1,9 @@
+.hexagon {
+  /* width: 200px; 
+  height: 210px;  */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  /* border-radius: 20px; */
+
+  /* background-color: #4caf50; */
+  /* background-image: linear-gradient(direction, color1, color2); */
+}

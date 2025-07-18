@@ -43,7 +43,7 @@ const Services = () => {
       <div className="w-[970px] mt-5 z-20">
         {/* SEO part  */}
         <div className="flex gap-4">
-          <div className="w-2/3 bg-[#FFFFFF] rounded-[20px] pl-5 flex gap-3 border border-[#FFFFFF] hover:border-[#F29F5C] transition-all duration-200">
+          <div className="w-2/3 bg-[#FFFFFF] rounded-[20px] pl-5 flex gap-3 border border-transparent hover:border-[#F29F5C] transition-all duration-200">
             <div className="pt-4 flex-1">
               <h3 className="text-2xl font-semibold capitalize text-[#17012C]">
                 SEO & Analytics
@@ -73,7 +73,7 @@ const Services = () => {
               <Image src={seoPic} alt="seoPic" height={226} />
             </div>
           </div>
-          <div className="w-1/3 bg-[#FFFFFF] rounded-[20px] pt-4 pl-5 pr-8 border border-[#FFFFFF] hover:border-[#F29F5C] transition-all duration-200">
+          <div className="w-1/3 bg-[#FFFFFF] rounded-[20px] pt-4 pl-5 pr-8 border border-transparent hover:border-[#F29F5C] transition-all duration-200">
             <h3 className="text-2xl font-semibold capitalize text-[#17012C]">
               Digital Strategy
             </h3>
@@ -100,7 +100,7 @@ const Services = () => {
         </div>
         {/* strategy part  */}
         <div className="flex gap-4 mt-4">
-          <div className="w-1/3 bg-[#FFFFFF] rounded-[20px] pt-4 pl-5 pr-8 border border-[#FFFFFF] hover:border-[#F29F5C] transition-all duration-200">
+          <div className="w-1/3 bg-[#FFFFFF] rounded-[20px] pt-4 pl-5 pr-8 border border-transparent hover:border-[#F29F5C] transition-all duration-200">
             <h3 className="text-2xl font-semibold capitalize text-[#17012C]">
               Strategy Creation
             </h3>
@@ -124,7 +124,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="w-2/3 bg-[#FFFFFF] rounded-[20px] pl-5 flex gap-5 border border-[#FFFFFF] hover:border-[#F29F5C] transition-all duration-200">
+          <div className="w-2/3 bg-[#FFFFFF] rounded-[20px] pl-5 flex gap-5 border border-transparent hover:border-[#F29F5C] transition-all duration-200">
             <div className="pt-4 flex-1 pr-5 ">
               <h3 className="text-2xl font-semibold capitalize text-[#17012C]">
                 Content Creation
@@ -159,7 +159,7 @@ const Services = () => {
         <div className="mt-8 bg-[#101010]/80 text-[#FFFFFF] rounded-[20px] flex items-center justify-center py-8">
           <div className="w-[594px] flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <Image src={clientPic} height={50} />
+              <Image src={clientPic} height={50} alt="clientPic" />
               <p className="capitalize text-[16px]">1.5k Happy Clients</p>
             </div>
             <div className="flex items-center gap-3">

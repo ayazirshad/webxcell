@@ -101,7 +101,7 @@ const Hero = () => {
             <h1 className="text-[#FFFFFF] text-8xl font-semibold max-w-[965px] leading-28 capitalize">
               your digital future designed today
             </h1>
-            <p className="mt-10 text-2xl font-semibold capitalize">
+            <p className="mt-10 text-2xl font-semibold capitalize text-[#FFFFFF]">
               Transforming visions into Digital experiences that inspire and
               Engage
             </p>
@@ -129,17 +129,17 @@ const Hero = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex flex-col gap-2">
-                <button className="border border-[#FFFFFF] h-7 w-7 p-2 rounded-full flex items-center justify-center">
+              <div className="flex flex-col gap-2 text-[#FFFFFF]">
+                <button className="border border-[#FFFFFF] hover:border-[#F26B01] hover:bg-[#F26B01] h-7 w-7 p-2 rounded-full flex items-center justify-center">
                   <FaFacebookF size={12} />
                 </button>
-                <button className="border border-[#F26B01] h-7 w-7 p-2 rounded-full flex items-center justify-center bg-[#F26B01]">
+                <button className="border border-[#FFFFFF] hover:border-[#F26B01] hover:bg-[#F26B01] h-7 w-7 p-2 rounded-full flex items-center justify-center ">
                   <FaTwitter />
                 </button>
-                <button className="border border-[#FFFFFF] h-7 w-7 p-2 rounded-full flex items-center justify-center">
+                <button className="border border-[#FFFFFF] hover:border-[#F26B01] hover:bg-[#F26B01] h-7 w-7 p-2 rounded-full flex items-center justify-center">
                   <RiInstagramFill />
                 </button>
-                <button className="border border-[#FFFFFF] h-7 w-7 p-2 rounded-full flex items-center justify-center">
+                <button className="border border-[#FFFFFF] hover:border-[#F26B01] hover:bg-[#F26B01] h-7 w-7 p-2 rounded-full flex items-center justify-center">
                   <FaYoutube />
                 </button>
               </div>
