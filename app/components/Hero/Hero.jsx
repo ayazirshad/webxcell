@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="px-20">
             <div className="w-full bg-[#FFFFFF] text-[#101010] rounded-b-[30px]">
               <div className="w-full bg-black text-white rounded-b-[30px] px-7 py-3 flex items-center justify-between">
-                <div className=" flex items-center gap-8">
+                <div className="flex items-center gap-8 ">
                   <div className="flex items-center gap-2 font-medium text-[16px]">
                     <LuPhoneCall size={18} className="text-[#FF6700] " />
                     <p>+44 800 195 7512</p>
@@ -68,11 +68,11 @@ const Hero = () => {
                   <FaYoutube size={18} className="text-[#FF6700]" />
                 </div>
               </div>
-              <div className="flex justify-between items-center px-7 py-5">
+              <div className="flex items-center justify-between py-5 px-7">
                 <div>
                   <Image src={logo} alt="logo" height={35} />
                 </div>
-                <div className="flex gap-5 items-center">
+                <div className="flex items-center gap-5">
                   <nav className="flex gap-8">
                     {navLinks.map((item, index) => {
                       return (
@@ -97,7 +97,7 @@ const Hero = () => {
             </div>
           </div>
           {/* main heading  */}
-          <div className="py-12 px-32 relative flex flex-col justify-center">
+          <div className="relative flex flex-col justify-center px-32 py-12">
             <h1 className="text-[#FFFFFF] text-8xl font-semibold max-w-[965px] leading-28 capitalize">
               your digital future designed today
             </h1>
@@ -105,22 +105,22 @@ const Hero = () => {
               Transforming visions into Digital experiences that inspire and
               Engage
             </p>
-            <div className="flex h-12 w-max absolute -bottom-12">
+            <div className="absolute flex h-12 w-max -bottom-12">
               <button className="uppercase bg-[#FF6700] text-[#FFFFFF] text-[16px] font-bold h-full px-5 rounded-full hover:cursor-pointer">
                 view services
               </button>
               <div className="bg-[#00BFFF] aspect-square rounded-full">
                 <Link
                   href={"/"}
-                  className="w-full h-full rounded-full flex justify-center items-center"
+                  className="flex items-center justify-center w-full h-full rounded-full"
                 >
                   <GoArrowUpRight size={25} />
                 </Link>
               </div>
             </div>
-            <div className="absolute right-10 flex items-center gap-60 ">
+            <div className="absolute flex items-center right-10 gap-60 ">
               <div className="w-16 h-16 p-[4px] rounded-full border border-[#FFFFFF]/15 ">
-                <div className="w-full h-full p-2 rounded-full border border-[#FFFFFF]/50">
+                <div className="w-full  p-2 rounded-full border border-[#FFFFFF]/50 h-full ">
                   <button
                     className="bg-[#FFFFFF] text-[#F26B01] w-full h-full rounded-full flex justify-center items-center hover:cursor-pointer"
                     onClick={() => handleNextIndex()}
@@ -148,7 +148,7 @@ const Hero = () => {
           <div className="w-full">
             <Image src={elem1} alt="png" />
           </div>
-          <div className=" flex justify-center gap-2">
+          <div className="flex justify-center gap-2 ">
             {arr.map((item, index) => {
               return (
                 <div
@@ -164,7 +164,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-nowrap overflow-hidden">
+      <div className="flex overflow-hidden flex-nowrap">
         {bgImages.map((image, index) => {
           return (
             <div
