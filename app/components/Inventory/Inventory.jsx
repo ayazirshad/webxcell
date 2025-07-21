@@ -24,9 +24,9 @@ const Inventory = () => {
     },
   ];
   return (
-    <div className="w-full bg-[#FFFFFF] flex justify-center items-center py-24">
-      <div className="flex max-w-[970px]">
-        <div className="w-1/2 py-3 flex flex-col justify-center">
+    <div className="w-full bg-[#FFFFFF] flex justify-center items-center py-16 md:py-24 px-5 md:px-10">
+      <div className="md:flex max-w-[970px]">
+        <div className="flex flex-col justify-center w-full py-3 md:w-1/2">
           <p className="text-[16px] font-semibold bg-linear-to-r bg-clip-text text-transparent from-[#F29F5C]  to-[#6461FC] to-80% uppercase w-max">
             your inventory is time
           </p>
@@ -38,7 +38,7 @@ const Inventory = () => {
             up for Payments or Writing Proposals from scratch or sending Manual
             Updates to your Clients.
           </p>
-          <div className="flex justify-between mt-8">
+          <div className="flex flex-col justify-between gap-5 mt-8 md:gap-0 md:flex-row">
             {gains.map((item, index) => {
               return (
                 <div key={index} className="flex items-center gap-2">
@@ -65,7 +65,7 @@ const Inventory = () => {
               <div className="bg-[#888B87] aspect-square rounded-full">
                 <Link
                   href={"/"}
-                  className="w-full h-full rounded-full flex justify-center items-center"
+                  className="flex items-center justify-center w-full h-full rounded-full"
                 >
                   <GoArrowUpRight size={23} />
                 </Link>
@@ -73,24 +73,24 @@ const Inventory = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex justify-between px-14 relative">
+        <div className="relative flex justify-around w-full px-0 mt-5 md:justify-between md:mt-0 md:w-1/2 lg:px-14">
           <div className="rounded-full bg-[#FEF5ED] px-2 pb-7 h-min">
             <Image src={inventoryPic2} alt="inventoryPic2" height={280} />
           </div>
-          <div className="h-full flex flex-col justify-between pb-12 absolute left-[38%] min-w-[120px]">
+          <div className="h-full flex flex-col justify-between md:pb-12 absolute left-[46%] sm:left-[40%] md:left-[38%] md:w-[120px]">
             <Image
               src={spiral}
               alt="spiral"
               height={80}
-              className="rotate-45 ml-auto"
+              className="ml-auto rotate-45"
             />
             <Image src={star} alt="star" height={40} />
           </div>
           <div className="rounded-full bg-[#FEF5ED] px-2 pt-7 h-min mt-auto">
             <Image src={inventoryPic1} alt="inventoryPic1" height={280} />
           </div>
-          <div className="h-24 w-24 bg-[#FFFFFF] absolute rounded-full left-48 top-44 p-1">
-            <div className="relative flex justify-center items-center rounded-full">
+          <div className="h-24 w-24 bg-[#FFFFFF] absolute rounded-full left-[36%] sm:left-[38%] md:left-[40%] top-28 md:top-44 p-1">
+            <div className="relative flex items-center justify-center rounded-full">
               <Image src={textPic} alt="textPic" />
               <Image
                 src={iconPic}

@@ -22,28 +22,27 @@ const Partners = () => {
   ];
 
   return (
-    <div>
+    <div className="">
       <div className="mt-24 text-center font-medium text-[22px] text-[#17012C] capitalize">
         trusted strategic partners
       </div>
-      <div className="flex items-center justify-center gap-8 mt-12 ">
+      <div className="flex flex-wrap items-center justify-center gap-4 mt-12 md:gap-8">
         {mixedArr?.map((item, index) => {
           return <Image src={item} key={index} alt="logo" height={44} />;
         })}
       </div>
-
-      <div className=" w-full h-max pt-[6px] my-16">
+      <div className="w-full h-max pt-[6px] my-16">
         <marquee behavior="scroll">
-          <div className="flex gap-24">
+          <div className="flex gap-12 sm:gap-16 md:gap-20 lg:gap-24">
             {marqeeTags.map((tag, index) => {
               return (
                 <div
                   key={index}
-                  className={`flex gap-8 h-full text-[55px] font-semibold text-[#101010] uppercase items-center ${
+                  className={`flex gap-2 md:gap-4 lg:gap-8 h-full text-[25px] sm:text-[30px] md:text-[40px] lg:text-[55px] font-semibold text-[#101010] uppercase items-center ${
                     index % 2 != 0 && `${markee} text-[#F26B01]`
                   }`}
                 >
-                  <p className="h-full text-[45px] text-[#101010]">
+                  <p className="h-full text-[20px] sm:text-[25px] md:text-[35px] lg:text-[45px] text-[#101010]">
                     <FaStarOfLife />
                   </p>
                   {tag}

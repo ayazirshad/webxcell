@@ -51,17 +51,24 @@ const CaseStudies = () => {
   };
 
   const handleNextIndex = () => {
-    currentIndex < caseStudiesData.length - 3 &&
+    currentIndex < caseStudiesData.length - 1 &&
       setCurrentIndex(currentIndex + 1);
   };
 
   return (
-    <div className="bg-[#000000] text-[#FFFFFF] w-full relative">
-      <div>
-        <Image src={orangeGroupPic} alt="orangeGroupPic" />
+    <div
+      className="bg-[#000000] text-[#FFFFFF] w-full relative h-screen"
+      id="portfolio"
+    >
+      <div className="h-full">
+        <Image
+          src={orangeGroupPic}
+          alt="orangeGroupPic"
+          className="object-cover h-full "
+        />
       </div>
       <div className="absolute top-0 left-0 w-full h-full py-24">
-        <div className="flex justify-center items-center">
+        <div className="flex items-center justify-center">
           <p className="text-[16px] font-semibold bg-linear-to-r bg-clip-text text-transparent from-[#F29F5C] to-[#6461FC] to-80% uppercase w-max ">
             our complete projects
           </p>
@@ -69,21 +76,23 @@ const CaseStudies = () => {
         <h2 className="capitalize text-[42px] font-bold pr-3 text-center mt-3">
           <span className="text-[#F26B01]">Case</span> Studies
         </h2>
-        <div className="flex mt-24 relative items-center">
-          <div className="flex overflow-hidden">
+        <div className="relative flex items-center mt-12 md:mt-16 lg:mt-24">
+          <div className="flex overflow-hidden md:p-5">
             {caseStudiesData.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className="relative group overflow-hidden rounded-2xl transition-all duration-300 min-w-[26%]"
+                  className="relative group overflow-hidden rounded-2xl transition-all duration-300 min-w-[100%] sm:min-w-[70%] md:min-w-[40%] lg:min-w-[26%] p-5 md:p-2"
                   style={{ transform: `translate(-${currentIndex * 100}%)` }}
                 >
+                  {/* <div className="flex items-center justify-center overflow-hidden bg-blue-300 h-44 md:h-64 rounded-2xl"> */}
                   <Image
                     src={item.figure}
                     alt={item.field}
                     height={300}
-                    className="rounded-2xl"
+                    className="object-contain h-full rounded-2xl w-min"
                   />
+                  {/* </div> */}
                   <div className="absolute -bottom-28 left-4 group-hover:bottom-4 transition-all duration-300 bg-[#FFFFF0] flex gap-10 rounded-md overflow-hidden">
                     <div className="py-1 px-3 text-[#101010]">
                       <p className="text-[16px] capitalize">{item.title}</p>
@@ -94,7 +103,7 @@ const CaseStudies = () => {
                     <div className="bg-[#F26B01]">
                       <Link
                         href={"/"}
-                        className="w-full h-full rounded-full flex justify-center items-center px-4"
+                        className="flex items-center justify-center w-full h-full px-4 rounded-full"
                       >
                         <GoArrowUpRight size={20} />
                       </Link>

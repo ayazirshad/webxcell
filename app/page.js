@@ -1,4 +1,3 @@
-import Hero from "./components/Hero/Hero";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Services from "./components/Services/Services";
 import Inventory from "./components/Inventory/Inventory";
@@ -8,6 +7,7 @@ import ExpertTeam from "./components/ExpertTeam/ExpertTeam";
 import LatestNews from "./components/LatestNews/LatestNews";
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
+import Hero from "./components/Hero/Hero";
 
 export default function Home() {
   return (

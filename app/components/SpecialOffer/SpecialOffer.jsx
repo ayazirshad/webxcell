@@ -11,10 +11,10 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const SpecialOffer = () => {
   return (
-    <div className="bg-[#FFFFFF] w-full pt-24">
-      <div className="w-full bg-[#F26B01]/10 flex justify-center relative">
-        <div className="flex items-center max-w-[970px] px-10 z-10">
-          <div className="w-1/2 flex justify-center relative">
+    <div className="bg-[#FFFFFF] w-full pt-24 ">
+      <div className="w-full bg-[#F26B01]/10 flex justify-center relative pt-5 px-5 md:px-10">
+        <div className="flex flex-col md:flex-row items-center max-w-[970px]  z-10">
+          <div className="relative flex justify-center order-2 w-full md:w-1/2 md:order-1">
             <Image
               src={womanPic}
               alt="womanPic"
@@ -24,17 +24,17 @@ const SpecialOffer = () => {
             <Image
               src={bigBlob}
               alt="bigBlob"
-              className="absolute -left-20 bottom-0 z-0"
+              className="absolute bottom-0 z-0 -left-20"
               height={325}
             />
             <Image
               src={blob9}
               alt="blob9"
-              className="absolute top-20 z-0"
+              className="absolute z-0 top-20"
               height={260}
             />
           </div>
-          <div className="w-1/2 ">
+          <div className="order-1 w-full md:w-1/2 md:order-2">
             <p className="text-[16px] font-semibold bg-linear-to-r bg-clip-text text-transparent from-[#F29F5C]  to-[#6461FC] to-80% uppercase w-max">
               get the special offer
             </p>
@@ -52,7 +52,7 @@ const SpecialOffer = () => {
               <div className="bg-[#00BFFF] aspect-square rounded-full">
                 <Link
                   href={"/"}
-                  className="w-full h-full rounded-full flex justify-center items-center"
+                  className="flex items-center justify-center w-full h-full rounded-full"
                 >
                   <GoArrowUpRight size={23} />
                 </Link>
@@ -60,17 +60,23 @@ const SpecialOffer = () => {
             </div>
           </div>
         </div>
-        <Image src={bigSpirals} alt="bigSpirals" className="absolute" />
+        <div className="h-full">
+          <Image
+            src={bigSpirals}
+            alt="bigSpirals"
+            className="absolute left-0 object-cover h-full"
+          />
+        </div>
         <Image
           src={wavesPic}
           alt="wavesPic"
-          className="absolute left-0 top-52"
+          className="absolute left-0 hidden top-52 md:block"
           height={18}
         />
         <Image
           src={spiral}
           alt="spiral"
-          className="absolute right-32 bottom-10"
+          className="absolute hidden right-32 bottom-10 md:block"
           height={98}
         />
       </div>

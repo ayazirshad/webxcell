@@ -34,10 +34,10 @@ const Footer = () => {
   ];
 
   return (
-    <div>
+    <div id="contact">
       {/* black part  */}
-      <div className="w-full py-7 bg-[#101010] text-center text-[#FFF] relative flex justify-center items-center gap-12 z-10">
-        <div className="border-r-2 border-[#FFFFFF]/20 pr-2">
+      <div className="w-full py-7 bg-[#101010] text-center text-[#FFF] relative flex flex-wrap justify-center items-center space-y-3 md:space-y-0 sm:space-x-6 md:space-x-12 z-10 px-5">
+        <div className="md:border-r-2 border-[#FFFFFF]/20 pr-2 flex flex-col items-center md:items-start z-10">
           <div className="w-10 h-10 rounded-full flex justify-center items-center bg-[#F26B01]">
             <FaLocationDot />
           </div>
@@ -45,13 +45,13 @@ const Footer = () => {
             Webxcell, Courtyard Ctr, Southwold Dr, Nottingham
           </p>
         </div>
-        <div className="border-r-2 border-[#FFFFFF]/20 pr-10">
+        <div className="md:border-r-2 border-[#FFFFFF]/20 md:pr-10 flex flex-col items-center md:items-start">
           <div className="w-10 h-10 rounded-full flex justify-center items-center bg-[#F26B01]">
             <IoCallOutline />
           </div>
           <p className="text-[20px]">44 (0) 800 195 7512</p>
         </div>
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <div className="w-10 h-10 rounded-full flex justify-center items-center bg-[#F26B01]">
             <LuMail />
           </div>
@@ -69,20 +69,20 @@ const Footer = () => {
           </div>
         </div>
         {/* right side half circles  */}
-        <div className="absolute bottom-0 right-16">
+        <div className="absolute -bottom-3 md:bottom-0 right-3 md:right-8">
           <div className="relative overflow-hidden w-28 h-28 ">
             <div className="w-28 h-28 rounded-full bg-[#F26B01]/25 absolute -bottom-[50%]"></div>
           </div>
         </div>
-        <div className="absolute bottom-0 right-32">
+        <div className="absolute bottom-0 right-16 md:right-32">
           <div className="relative overflow-hidden w-28 h-28 ">
             <div className="w-28 h-28 rounded-full bg-[#FFFFFF]/25 absolute -bottom-[50%]"></div>
           </div>
         </div>
       </div>
       {/* white part  */}
-      <div className="flex flex-col items-center py-12 bg-[#F26B01]/5 relative overflow-hidden">
-        <div className="z-10 flex gap-20">
+      <div className="flex flex-col items-center py-12 bg-[#F26B01]/5 relative overflow-hidden px-5">
+        <div className="z-10 flex flex-wrap gap-8 sm:gap-14 md:gap-20">
           <div>
             <div className="pl-5 mb-5">
               <Image src={logo} alt="webxcell" height={24} />
@@ -158,7 +158,7 @@ const Footer = () => {
               })}
             </div>
           </div>
-          <div>
+          <div className="relative">
             <p className="font-medium capitalize max-w-[210px]">
               Keep Abreast with Latest in Digital Transformation
             </p>
@@ -175,25 +175,30 @@ const Footer = () => {
                 <FaRegPaperPlane size={17} />
               </div>
             </div>
+            <div className="absolute top-0 h-12 md:top-10 -right-10 sm:-right-20 md:-right-32 sm:h-16 md:h-20">
+              <Image
+                src={letterPic}
+                alt="letterPic"
+                className="object-contain h-full w-min"
+              />
+            </div>
           </div>
         </div>
-        <div className="z-10 w-full mt-10 px-60">
+        <div className="z-10 w-full px-0 mt-10 sm:px-10 md:px-32 lg:px-60">
           <p className="border-t border-[#101010]/40 w-[90%]"></p>
-          <div className="capitalize text-[#101010] text-[14px]  flex justify-between py-3">
+          <div className="capitalize text-[#101010] text-[14px] flex flex-col md:flex-row justify-between py-3">
             <p>&copy; All Copyright 2024 by Webxcell Digital</p>
             <p>Privacy Notice | Terms & Conditions | Cookies Policy</p>
           </div>
         </div>
-        <div className="absolute top-20 right-24">
-          <Image src={letterPic} alt="letterPic" height={95} />
-        </div>
+
         <div className="absolute right-0 -top-10">
           <Image src={LinesPic} alt="linesPic" height={400} />
         </div>
         <div className="absolute left-0 -top-16 scale-x-[-1] z-10">
           <Image src={LinesPic} alt="linesPic" height={400} />
         </div>
-        <div className="bg-[#00BFFF] h-[976px] w-[976px] rounded-full absolute -top-14 left-[-531px] z-0 blur-3xl"></div>
+        <div className="bg-[#00BFFF] h-[976px] w-[976px] rounded-full absolute top-14 md:-top-14 left-[-750px] md:left-[-531px] z-0 blur-3xl"></div>
       </div>
     </div>
   );

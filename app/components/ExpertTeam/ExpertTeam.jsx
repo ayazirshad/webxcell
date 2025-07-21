@@ -9,6 +9,7 @@ import person1 from "../../../public/expertTeam/image (1).png";
 import person2 from "../../../public/expertTeam/image (2).png";
 import person3 from "../../../public/expertTeam/image (3).png";
 import person4 from "../../../public/expertTeam/image.png";
+import trianlge from "../../../public/expertTeam/Polygon 15.png";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { HiArrowNarrowLeft, HiArrowNarrowRight } from "react-icons/hi";
 
@@ -58,7 +59,7 @@ const ExpertTeam = () => {
   };
 
   return (
-    <div className="w-full py-20 ">
+    <div className="relative w-full px-5 py-20 overflow-hidden md:px-10">
       <div className="flex flex-col items-center justify-center w-full">
         <p className="text-[16px] font-semibold bg-linear-to-r bg-clip-text text-transparent from-[#F29F5C] to-[#6461FC] to-80% uppercase w-max">
           our expert team
@@ -71,7 +72,7 @@ const ExpertTeam = () => {
           </span>
         </h2>
       </div>
-      <div className="flex justify-center w-full gap-5 mt-8 ">
+      <div className="z-20 flex flex-wrap justify-center w-full gap-5 mt-8">
         {team.map((member, index) => {
           return (
             <div
@@ -100,9 +101,9 @@ const ExpertTeam = () => {
           );
         })}
       </div>
-      <div className=" bg-[#F26B01] mt-24 mx-16 rounded-xl flex py-20">
-        <div className=" w-[45%] flex flex-col justify-center items-center">
-          <div className="text-[#FFFFFF] text-[16px] flex items-center gap-2">
+      <div className=" bg-[#F26B01] mt-24 mx-0 sm:mx-5 md:mx-10 lg:mx-16 rounded-xl flex flex-col md:flex-row py-20 px-5">
+        <div className="w-full md:w-[45%] flex flex-col justify-center items-center order-2 md:order-1 gap-5 sm:gap-3 md:gap-0">
+          <div className="text-[#FFFFFF] text-[16px] flex items-center gap-2 order-2 md:order-1">
             <div className="relative flex w-28 h-9">
               <Image
                 src={person1}
@@ -131,7 +132,7 @@ const ExpertTeam = () => {
             </div>
             <p>1.5k happy clients</p>
           </div>
-          <div className="flex gap-3 mt-5">
+          <div className="flex order-1 gap-3 mt-5 md:order-2">
             <div className="h-14 w-14 rounded-full bg-[#ffffff] p-1">
               <button
                 className="h-full w-full rounded-full hover:bg-[#F26B01] text-[#F26B01] hover:text-[#fff] border border-[#F26B01] flex justify-center items-center hover:cursor-pointer"
@@ -150,7 +151,7 @@ const ExpertTeam = () => {
             </div>
           </div>
         </div>
-        <div className="w-[55%] pr-32">
+        <div className="w-full md:w-[55%] pr-0 sm:pr-10 md:pr-20 lg:pr-32 order-1 md:order-2">
           <div className="flex overflow-hidden flex-nowrap">
             {team.map((item, index) => {
               return (
@@ -181,6 +182,16 @@ const ExpertTeam = () => {
           </div>
         </div>
       </div>
+      {/* left side  */}
+      <div className="absolute z-10 top-[500px] md:top-[400px] lg:top-72 -left-24 md:-left-20 lg:-left-16">
+        <Image src={trianlge} alt="trianlge" height={150} />
+      </div>
+      <div className="h-56 w-56 rounded-full bg-linear-to-b from-[#F26B01]/80 to-[#FFF] blur-2xl absolute top-[500px] md:top-[400px] lg:top-72 -left-36 md:-left-28 lg:-left-24 z-0"></div>
+      {/* right side  */}
+      <div className="absolute z-10 top-32 -right-24 md:-right-16">
+        <Image src={trianlge} alt="trianlge" height={150} />
+      </div>
+      <div className="h-56 w-56 rounded-full bg-linear-to-b from-[#F26B01]/80 to-[#FFF] blur-2xl absolute top-32 -right-36 md:-right-24 z-0"></div>
     </div>
   );
 };
